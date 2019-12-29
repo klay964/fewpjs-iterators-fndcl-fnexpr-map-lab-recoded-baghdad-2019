@@ -17,15 +17,15 @@ tutorials=tutorials.map(function(tutorials) {
     arraySpace[i] =
       arraySpace[i].charAt(0).toUpperCase() + arraySpace[i].slice(1);
   }
-  let newTut = "";
+  let t = "";
   for (let i = 0; i < arraySpace.length; i++) {
     if (i == arraySpace.length - 1) {
-      newTut += arraySpace[i];
+      t += arraySpace[i];
     } else {
-      newTut += arraySpace[i] + " ";
+      t += arraySpace[i] + " ";
     }
   }
-  return (tutorials = newTut);
+  return (tutorials = t);
 });
 const titleCased = () => {
   return tutorials
